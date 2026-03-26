@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sorting.unity
     guid: b59691ac67e2ec349a011b21466983bb
+  - enabled: 1
+    path: Assets/Scenes/Cutting.unity
+    guid: ffe1cc467b42db7489fa5a631ed5093c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

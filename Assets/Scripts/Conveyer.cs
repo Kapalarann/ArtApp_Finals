@@ -27,4 +27,12 @@ public class Conveyer : MonoBehaviour
 
     public void SetConveyerState( bool state )
         => _canMove = state;
+
+    void OnCollisionStay( Collision col )
+    {
+        if ( col.collider.CompareTag( "Player" ) )
+        {
+            col.rigidbody.angularVelocity = Vector3.zero;
+        }       
+    }
 }
