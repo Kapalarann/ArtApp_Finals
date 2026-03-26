@@ -432,6 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonCamera
   _mouseSens: 1
   _followTarget: {fileID: 1044659815}
+  _shouldFollowRotation: 0
   _useLocalTransform: 1
   _offset: {x: 0, y: 1.5, z: 0}
 --- !u!1 &832575517
