@@ -789,8 +789,9 @@ MonoBehaviour:
           m_StringArgument: ANM_Guillotine Chop
           m_BoolArgument: 1
         m_CallState: 2
-  _checkName: 0
-  _names: []
+  _checkName: 1
+  _names:
+  - pineapple
   _loadSceneOnPlayerHit: 
 --- !u!65 &1746234729
 BoxCollider:
