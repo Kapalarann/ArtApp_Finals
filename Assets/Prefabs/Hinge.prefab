@@ -236,7 +236,9 @@ MonoBehaviour:
           m_StringArgument: ANM_Hinge Open
           m_BoolArgument: 1
         m_CallState: 2
-  tag: 
+  _checkName: 1
+  _names: []
+  _loadSceneOnPlayerHit: 
 --- !u!1 &7073820676272404664
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +320,9 @@ MonoBehaviour:
           m_StringArgument: ANM_Hinge Close
           m_BoolArgument: 1
         m_CallState: 2
-  tag: 
+  _checkName: 1
+  _names: []
+  _loadSceneOnPlayerHit: 
 --- !u!1 &8774058641803048550
 GameObject:
   m_ObjectHideFlags: 0
