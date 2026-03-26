@@ -53,8 +53,21 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _noise_scale: 20
+    - _bottom_noise_scale: -0.5
+    - _bottom_texture_scroll_speed: 2.95
+    - _noise_scale: 18.86
     - _speed: 0.05
-    m_Colors: []
+    - _texture_scroll_speed: -1
+    - _water_threshold: 0.28
+    - _wave_height: 0.64
+    - _wave_noise_scale: 3.45
+    - _wave_speed: 0.6
+    m_Colors:
+    - _base_color: {r: 0.020425422, g: 0.11798252, b: 0.254717, a: 1}
+    - _flow_speed: {r: 1, g: 0, b: 0, a: 0}
+    - _highlights_color: {r: 0, g: 0.4716981, b: 0.36609408, a: 1}
+    - _main_color: {r: 0.0485938, g: 0.15729086, b: 0.49056602, a: 1}
+    - _ripple_scale: {r: 5, g: 10, b: 0, a: 0}
+    - _tip_color: {r: 0.5730687, g: 0.8867924, b: 0.7455505, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
