@@ -790,6 +790,7 @@ GameObject:
   - component: {fileID: 1413680250}
   - component: {fileID: 1413680249}
   - component: {fileID: 1413680253}
+  - component: {fileID: 1413680254}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -893,6 +894,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stain
   _stainPrefab: {fileID: 1451159563}
+--- !u!114 &1413680254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413680248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6309cd5f37b8eed418229e55a556552f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  _event: {fileID: 11400000, guid: bf467761a94726743aa5727faaf625e8, type: 2}
+  _onRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1413680253}
+        m_TargetAssemblyTypeName: Stain, Assembly-CSharp
+        m_MethodName: StainScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1451159561
 GameObject:
   m_ObjectHideFlags: 0

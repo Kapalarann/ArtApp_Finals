@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class TriggerVolume : MonoBehaviour
 {
     [SerializeField] UnityEvent _onTrigger;
-    [SerializeField] bool _checkName;
+    [SerializeField] UnityEvent _onPlayerTrigger;
     [SerializeField] string[] _names;
 
     [SerializeField] string _loadSceneOnPlayerHit;
@@ -19,21 +19,19 @@ public class TriggerVolume : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if ( !_checkName )
+        if ( other.CompareTag( "Player" ) )
         {
-            if ( other.CompareTag( "Player" ) )
-            {
-                _onTrigger?.Invoke();
+            _onPlayerTrigger?.Invoke();
+            _onTrigger?.Invoke();
 
-                if ( !string.IsNullOrEmpty( _loadSceneOnPlayerHit ) )
-                    SceneLoader.Instance.Load( _loadSceneOnPlayerHit );
-            }
+            if ( !string.IsNullOrEmpty( _loadSceneOnPlayerHit ) )
+                SceneLoader.Instance.Load( _loadSceneOnPlayerHit );
+
+            return;
         }
-        else
-        {
-            if ( _names.Any( s => other.name.Contains( s ) ) )
-                _onTrigger?.Invoke();
-        }
+    
+        if ( _names.Any( s => other.name.Contains( s ) ) )
+            _onTrigger?.Invoke();
     }
 
     void OnDrawGizmos()
