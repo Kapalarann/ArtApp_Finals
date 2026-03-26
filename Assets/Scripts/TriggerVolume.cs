@@ -31,7 +31,7 @@ public class TriggerVolume : MonoBehaviour
         }
         else
         {
-            if ( _names.Any( s => s.Contains( other.name ) ) )
+            if ( _names.Any( s => other.name.Contains( s ) ) )
                 _onTrigger?.Invoke();
         }
     }
