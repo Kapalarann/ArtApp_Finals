@@ -30,9 +30,7 @@ public class Conveyer : MonoBehaviour
 
     void OnCollisionStay( Collision col )
     {
-        if ( col.collider.CompareTag( "Player" ) )
-        {
+        if ( col.collider.name.Contains( "apple" ) )
             col.rigidbody.angularVelocity = Vector3.zero;
-        }       
     }
 }
