@@ -6,6 +6,8 @@ public class Conveyer : MonoBehaviour
     [SerializeField] float _speed = 2.0f;
     [SerializeField] Rigidbody _rb;
 
+    Animation _anim;
+
     bool _canMove = true;
 
     void OnValidate()
@@ -18,7 +20,7 @@ public class Conveyer : MonoBehaviour
     {
         if ( !_canMove )
             return;
-            
+
         _rb.position -= _speed * Time.deltaTime * transform.forward;
         _rb.MovePosition( _rb.position + _speed * Time.deltaTime * transform.forward );
     }
