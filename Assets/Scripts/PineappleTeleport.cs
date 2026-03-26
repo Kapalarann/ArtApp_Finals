@@ -1,15 +1,17 @@
-using Unity.Cinemachine;
+using System.Collections;
 using UnityEngine;
 
 public class PineappleTeleport : MonoBehaviour
 {
-    void Start()
+    IEnumerator Start()
     {
+        yield return Bootstrapper.WaitUntilBootstrapIsLoaded();
+
         GameObject p = GameObject.FindGameObjectWithTag( "Player" );
         if ( p == null )
         {
             Debug.LogWarning( "NO PLAYER. PLEASE LOAD MAIN SCENE IF U WANT PLAYER" );
-            return;
+            yield break;
         }
         
         // CinemachineCamera fc = FindFirstObjectByType<CinemachineCamera>();

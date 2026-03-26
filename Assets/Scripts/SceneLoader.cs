@@ -9,7 +9,9 @@ public class SceneLoader : MonoBehaviour
     {
         Instance = this;
 
+#if !UNITY_EDITOR
         LoadSceneIfNothing();
+#endif
     }
 
     public async void Load( string sceneToLoad )
@@ -28,6 +30,6 @@ public class SceneLoader : MonoBehaviour
     {
         // Washing is default starting scene
         if ( SceneManager.loadedSceneCount == 1 )
-            SceneManager.LoadSceneAsync( "Washing" );
+            SceneManager.LoadSceneAsync( "Washing", LoadSceneMode.Additive );
     }
 }
