@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51113e20c5b22be4286c8d3e9f84a7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Conveyer
-  _speed: 1
+  _speed: 0.5
   _rb: {fileID: 438465734}
 --- !u!54 &438465734
 Rigidbody:
@@ -998,7 +998,7 @@ Transform:
   m_GameObject: {fileID: 775847307}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08534002, y: 0.8474698, z: 3.58223}
+  m_LocalPosition: {x: 0.08534002, y: 0.8474698, z: 4.5}
   m_LocalScale: {x: 4, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51113e20c5b22be4286c8d3e9f84a7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Conveyer
-  _speed: 1
+  _speed: 0.5
   _rb: {fileID: 985806386}
 --- !u!54 &985806386
 Rigidbody:
@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51113e20c5b22be4286c8d3e9f84a7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Conveyer
-  _speed: 1
+  _speed: 0.5
   _rb: {fileID: 1394004714}
 --- !u!54 &1394004714
 Rigidbody:
