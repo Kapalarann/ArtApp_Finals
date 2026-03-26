@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/_Main.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Washing.unity
+    guid: daa6f16bd83c2a546ba5afaec7070724
+  - enabled: 1
+    path: Assets/Scenes/Sorting.unity
+    guid: b59691ac67e2ec349a011b21466983bb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

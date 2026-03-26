@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pineapple size5
       objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.941
@@ -187,6 +191,10 @@ PrefabInstance:
     - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_Name
       value: pineapple size2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -667,6 +675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pineapple size2
       objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.941
@@ -723,6 +735,10 @@ PrefabInstance:
     - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_Name
       value: pineapple size5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -781,6 +797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pineapple size1
       objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.941
@@ -838,6 +858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pineapple size4
       objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.941
@@ -894,6 +918,10 @@ PrefabInstance:
     - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_Name
       value: pineapple size4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1772,6 +1800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pineapple size3
       objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.941
@@ -1984,6 +2016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pineapple size3
       objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.941
@@ -2029,6 +2065,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+--- !u!1 &1527668199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527668200}
+  - component: {fileID: 1527668201}
+  m_Layer: 0
+  m_Name: pineapple_teleport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1527668200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527668199}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 23, z: -16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1527668201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527668199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49732b96e76bf2428e1daebc793154d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PineappleTeleport
 --- !u!1001 &1546020652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2373,6 +2453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pineapple size1
       objectReference: {fileID: 0}
+    - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.941
@@ -2653,3 +2737,4 @@ SceneRoots:
   - {fileID: 1858332229}
   - {fileID: 1122958787}
   - {fileID: 124961586}
+  - {fileID: 1527668200}

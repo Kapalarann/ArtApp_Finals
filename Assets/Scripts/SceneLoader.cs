@@ -18,6 +18,7 @@ public class SceneLoader : MonoBehaviour
     async Awaitable LoadAsync( string sceneToLoad )
     {
         Scene current = SceneManager.GetSceneAt( 1 );
-        await SceneManager.LoadSceneAsync( sceneToLoad );
+        await SceneManager.LoadSceneAsync( sceneToLoad, LoadSceneMode.Additive );
+        await SceneManager.UnloadSceneAsync( current );
     }
 }
