@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -5,7 +6,10 @@ using UnityEngine.Events;
 public class TriggerVolume : MonoBehaviour
 {
     [SerializeField] UnityEvent _onTrigger;
-    [SerializeField] string tag;
+    [SerializeField] bool _checkName;
+    [SerializeField] string[] _names;
+
+    [SerializeField] string _loadSceneOnPlayerHit;
 
     void OnValidate()
     {
@@ -15,8 +19,17 @@ public class TriggerVolume : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if ( other.name.Contains( tag ) )
+        if ( !_checkName ) 
+        {
             _onTrigger?.Invoke();
+            return;
+        }
+
+        if ( _names.Contains( other.name ) )
+            _onTrigger?.Invoke();
+
+        if ( !string.IsNullOrEmpty( _loadSceneOnPlayerHit ) )
+            SceneLoader.Instance.Load( _loadSceneOnPlayerHit );
     }
 
     void OnDrawGizmos()

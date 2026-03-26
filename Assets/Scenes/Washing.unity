@@ -10662,6 +10662,8 @@ MonoBehaviour:
   _onTrigger:
     m_PersistentCalls:
       m_Calls: []
+  tag: Player
+  _loadSceneOnHit: 
 --- !u!65 &704572493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10888,6 +10890,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  tag: Player
+  _loadSceneOnHit: 
 --- !u!1 &843127493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c398c5ab3dba0245b1d2368c3c331bd, type: 3}
