@@ -789,6 +789,7 @@ GameObject:
   - component: {fileID: 1413680251}
   - component: {fileID: 1413680250}
   - component: {fileID: 1413680249}
+  - component: {fileID: 1413680253}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -879,6 +880,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1413680253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413680248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1182c0744d9da47a1c42fb89bd5585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stain
+  _stainPrefab: {fileID: 1451159561}
 --- !u!1 &1451159561
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,12 +905,12 @@ GameObject:
   - component: {fileID: 1451159564}
   - component: {fileID: 1451159563}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Stain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1451159562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -906,7 +920,7 @@ RectTransform:
   m_GameObject: {fileID: 1451159561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1413680252}
