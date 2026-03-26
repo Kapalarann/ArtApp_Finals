@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1182c0744d9da47a1c42fb89bd5585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stain
-  _stainPrefab: {fileID: 1451159561}
+  _stainPrefab: {fileID: 1451159563}
 --- !u!1 &1451159561
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,7 +910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1451159562
 RectTransform:
   m_ObjectHideFlags: 0
