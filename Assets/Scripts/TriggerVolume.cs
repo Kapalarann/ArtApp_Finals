@@ -28,7 +28,7 @@ public class TriggerVolume : MonoBehaviour
         if ( _names.Contains( other.name ) )
             _onTrigger?.Invoke();
 
-        if ( !string.IsNullOrEmpty( _loadSceneOnPlayerHit ) )
+        if ( other.CompareTag( "Player" ) && !string.IsNullOrEmpty( _loadSceneOnPlayerHit ) )
             SceneLoader.Instance.Load( _loadSceneOnPlayerHit );
     }
 
