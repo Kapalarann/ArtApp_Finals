@@ -340,12 +340,12 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.25340134, y: 0.00000001140491, z: -0.0000000029875287, w: 0.9673613}
-  m_LocalPosition: {x: 0, y: 0.84643173, z: 0}
+  m_LocalPosition: {x: 0, y: 19, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 38359760}
-  m_Father: {fileID: 264186812}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -436,6 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonCamera
   _mouseSens: 1
+  _followTarget: {fileID: 264186812}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,10 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8071597444341294358, guid: 10c9d7f713402434e89f1b6aba132cc2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 330585546}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10c9d7f713402434e89f1b6aba132cc2, type: 3}
 --- !u!1660057539 &9223372036854775807
@@ -849,5 +847,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 851372590}
   - {fileID: 832575519}
+  - {fileID: 330585546}
   - {fileID: 7218073085450705413}
   - {fileID: 1211898033}
