@@ -6,8 +6,6 @@ public class Conveyer : MonoBehaviour
     [SerializeField] float _speed = 2.0f;
     [SerializeField] Rigidbody _rb;
 
-    Animation _anim;
-
     bool _canMove = true;
 
     void OnValidate()
