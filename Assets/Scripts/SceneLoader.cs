@@ -8,6 +8,8 @@ public class SceneLoader : MonoBehaviour
     void Awake()
     {
         Instance = this;
+
+        LoadSceneIfNothing();
     }
 
     public async void Load( string sceneToLoad )
@@ -20,5 +22,11 @@ public class SceneLoader : MonoBehaviour
         Scene current = SceneManager.GetSceneAt( 1 );
         await SceneManager.LoadSceneAsync( sceneToLoad, LoadSceneMode.Additive );
         await SceneManager.UnloadSceneAsync( current );
+    }
+
+    public void LoadSceneIfNothing()
+    {
+        if ( SceneManager.loadedSceneCount == 1 )
+            SceneManager.LoadSceneAsync( "Washing" );
     }
 }
