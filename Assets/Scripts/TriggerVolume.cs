@@ -19,17 +19,21 @@ public class TriggerVolume : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if ( !_checkName ) 
+        if ( !_checkName )
         {
-            _onTrigger?.Invoke();
-        }
-        else if ( _checkName && _names.Contains( other.name ) )
-        {
-            _onTrigger?.Invoke();
-        }
+            if ( other.CompareTag( "Player" ) )
+            {
+                _onTrigger?.Invoke();
 
-        if ( other.CompareTag( "Player" ) && !string.IsNullOrEmpty( _loadSceneOnPlayerHit ) )
-            SceneLoader.Instance.Load( _loadSceneOnPlayerHit );
+                if ( !string.IsNullOrEmpty( _loadSceneOnPlayerHit ) )
+                    SceneLoader.Instance.Load( _loadSceneOnPlayerHit );
+            }
+        }
+        else
+        {
+            if ( _names.Any( s => s.Contains( other.name ) ) )
+                _onTrigger?.Invoke();
+        }
     }
 
     void OnDrawGizmos()

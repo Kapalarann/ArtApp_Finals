@@ -765,7 +765,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3865994798236238878, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_Name
-      value: player
+      value: playapple
       objectReference: {fileID: 0}
     - target: {fileID: 4534303926166576804, guid: 775766788c9b1f948a69a9b5ce870aea, type: 3}
       propertyPath: m_LocalPosition.x
