@@ -26,6 +26,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadSceneIfNothing()
     {
+        // Washing is default starting scene
         if ( SceneManager.loadedSceneCount == 1 )
             SceneManager.LoadSceneAsync( "Washing" );
     }
