@@ -14,13 +14,13 @@ public class PineappleTeleport : MonoBehaviour
             return;
         }
         
-        CinemachineCamera fc = FindFirstObjectByType<CinemachineCamera>();
-        fc.enabled = false;
+        // CinemachineCamera fc = FindFirstObjectByType<CinemachineCamera>();
+        // fc.enabled = false;
 
         p.GetComponent<Rigidbody>().MovePosition( transform.position );
         p.GetComponent<Rigidbody>().rotation = Quaternion.Euler( _startRotation );
-        fc.transform.position = transform.position;
+        // fc.transform.position = transform.position;
 
-        fc.enabled = true;
+        // fc.enabled = true;
     }
 }
