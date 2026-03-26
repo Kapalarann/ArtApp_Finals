@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class TriggerVolume : MonoBehaviour
 {
     [SerializeField] UnityEvent _onTrigger;
+    [SerializeField] string tag;
 
     void OnValidate()
     {
@@ -14,7 +15,7 @@ public class TriggerVolume : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if ( other.CompareTag( "Player" ) )
+        if ( other.name.Contains( tag ) )
             _onTrigger?.Invoke();
     }
 
