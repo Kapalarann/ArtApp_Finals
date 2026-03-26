@@ -8,4 +8,7 @@ public class AudioController : MonoBehaviour
     {
         foreach (var audioSource in m_AudioSource) { audioSource.Play(); }
     }
+
+    void PlaySpecific( int index )
+        => m_AudioSource[ index ].Play();
 }

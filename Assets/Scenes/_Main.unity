@@ -436,8 +436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonCamera
   _mouseSens: 1
-  _followTarget: {fileID: 264186812}
-  _offset: {x: 0, y: 1, z: 0}
+  _followTarget: {fileID: 1044659815}
+  _useLocalTransform: 1
+  _offset: {x: 0, y: 1.5, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0712785dd07e5134198b49715e528382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
+--- !u!4 &1044659815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3303916726226288375, guid: 10c9d7f713402434e89f1b6aba132cc2, type: 3}
+  m_PrefabInstance: {fileID: 7218073085450705413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1211898027
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +778,62 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.25340134, y: 0.000000011404909, z: -0.0000000029875282, w: 0.9673613}
   m_LocalPosition: {x: 0.4936334, y: 20.403568, z: -4.790871}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1291091097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1291091099}
+  - component: {fileID: 1291091098}
+  m_Layer: 0
+  m_Name: Audio Reverb Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!167 &1291091098
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291091097}
+  m_Enabled: 1
+  m_MinDistance: 17.475285
+  m_MaxDistance: 29.876451
+  m_ReverbPreset: 22
+  m_Room: -1000
+  m_RoomHF: -1000
+  m_DecayTime: 2.81
+  m_DecayHFRatio: 0.14
+  m_Reflections: 429
+  m_ReflectionsDelay: 0.014
+  m_Reverb: 1023
+  m_ReverbDelay: 0.021
+  m_HFReference: 5000
+  m_Diffusion: 80
+  m_Density: 60
+  m_LFReference: 250
+  m_RoomLF: 0
+--- !u!4 &1291091099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291091097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.24215, y: 3, z: 12.27722}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1152,3 +1214,4 @@ SceneRoots:
   - {fileID: 1211898033}
   - {fileID: 1413680252}
   - {fileID: 1644283277}
+  - {fileID: 1291091099}

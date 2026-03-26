@@ -1,15 +1,18 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animation))]
 public class AnimationController : MonoBehaviour
 {
-    Animation animation;
+    Animation _animation;
     private void Awake()
     {
-        animation = GetComponent<Animation>();
+        _animation = GetComponent<Animation>();
     }
 
     public void Play(string animationClip)
     {
-        animation.Play(animationClip);
+        if ( string.IsNullOrEmpty( animationClip ) )
+            return;
+        _animation.Play(animationClip);
     }
 }

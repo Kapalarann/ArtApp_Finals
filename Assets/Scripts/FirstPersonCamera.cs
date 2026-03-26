@@ -8,6 +8,8 @@ public class FirstPersonCamera : MonoBehaviour
     [SerializeField]
     Transform _followTarget;
 
+    [SerializeField] bool _useLocalTransform;
+
     [SerializeField] Vector3 _offset = Vector3.up;
 
     float _mouseX, _mouseY;
@@ -28,6 +30,10 @@ public class FirstPersonCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position = _followTarget.position + _offset;
+        var offset = _offset;
+        if ( _useLocalTransform )
+            offset = _followTarget.TransformDirection( _offset );
+            
+        transform.position = _followTarget.position + offset;
     }
 }
